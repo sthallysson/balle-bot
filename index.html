@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um bot que irá moderar e deixar a sua comunidade segura de um jeito facil"
+    />
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
+    <title>Balle Bot - Modera a sua comunidade do Discord</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="images/logo.svg" alt="logo da comunidade" />
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav>
+        <ul>
+          <li><a class="menu-item" href="#">Comunidade Ballerine</a></li>
+          <li><a class="menu-item" href="#">Tutorial</a></li>
+          <li><a class="menu-item" href="#">Open Source</a></li>
+          <li><a class="menu-item" href="#">Comandos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-content">
+        <div>
+          <h1>Balle Bot</h1>
+          <h2>Deixe a sua comunidade segura de um jeito fácil</h2>
+          <button class="btn">Me adicione!</button>
+        </div>
+        <img src="images/balleBot.svg" alt="Imagem da Balle bot" />
+      </section>
+
+      <section class="secondary-content">
+        <h3>O que ela faz por você?</h3>
+        <p>
+          1. Cria um <strong>sistema de verificação capcha</strong> para novos
+          membros garantirem que não são robôs
+        </p>
+        <p>
+          2. Possui um <strong>sistema de banimento automático</strong> para
+          links suspeitos que forem enviados na comunidade
+        </p>
+        <p>
+          3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas
+          administradoras utilizarem
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <img src="images/ballerini.svg" alt="" />
+    </footer>
+
+    <script>
+      let menu = document.querySelector("#menu-bar");
+      let navbar = document.querySelector("nav");
+
+      menu.addEventListener("click", () => {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

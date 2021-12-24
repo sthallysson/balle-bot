@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #8e5d52;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #2f2325;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+
+#logo {
+  height: 72px;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+nav.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+nav.active ul {
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  top: 120px;
+}
+
+#menu-bar {
+  display: none;
+  color: #fff2e7;
+  font-size: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
+
+.menu-item {
+  font-family: "Sarala", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.menu-item:hover {
+  color: rgba(236, 214, 186, 0.53);
+}
+
+nav.active ul li .menu-item {
+  font-size: 28px;
+}
+
+main {
+  border-top: 0.4px solid #fff2e7;
+  margin-bottom: 48px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-content div h1 {
+  color: #fff2e7;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 64px;
+}
+
+.main-content div h2 {
+  color: #ecd6c4;
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #ecd6c4;
+  font-family: "Sarala", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #2f2325;
+  cursor: pointer;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: rgba(236, 214, 186, 0.53);
+}
+
+.main-content img {
+  height: 430px;
+}
+
+.secondary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.secondary-content h3 {
+  border-top: 0.4px solid #fff2e7;
+  padding-top: 48px;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff2e7;
+  margin-bottom: 16px;
+}
+
+.secondary-content p {
+  font-family: "Sarala", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ecd6c4;
+}
+
+footer {
+  border-top: 0.4px solid #fff2e7;
+  padding: 32px;
+}
+
+footer img {
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+  nav {
+    display: none;
+  }
+  #menu-bar {
+    display: block;
+  }
+  .main-content {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .main-content div {
+    align-items: center;
+    gap: 20px;
+  }
+  .main-content div h2,
+  .secondary-content p {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .main-content img {
+    height: 320px;
+  }
+}
